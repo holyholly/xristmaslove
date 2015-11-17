@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <title>Xristmaslove by holyholly</title>
+  </head>
+
+  <body>
+
+        <div id="bg" class="container" style="background-image:url('images/bg.jpg');background-repeat:no-repeat;background-size:cover;width:100%;">
+            <img src="images/Snowman-icon.png" class="center-block img-rounded img-responsive snowman"/>
+            <p class="text-center"><h2 id="countdown" class="text-center">n</h2></p>
+        </div>
+
+  </body>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          console.log( "ready!" );
+          var vph = $(window).height();
+          console.log(vph);
+          $("#bg").height(vph);
+          var d1 = new Date("December 24, 2015 18:30:00");
+          var d2 = new Date();
+          var n = d1.getDate()-d2.getDate()+30*(d1.getMonth()-d2.getMonth());
+          $("#countdown").html("<small>还有</small>"+n+"<small>天</small>");
+          $(".snowman").on( "tap", function() {
+            $(this).css("box-shadow","0px 0px 0px red");
+          });
+      });
+    </script>
+</html>

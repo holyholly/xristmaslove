@@ -15,14 +15,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     
     <script type="text/javascript">
-      
+      $( document ).ready(function() {
+          console.log( "ready!" );
+          vph = $(window).height();
+          $(‘#bg’).css({‘height’: vph + ‘px’});
+      });
     </script>
     <title>Xristmaslove by holyholly</title>
   </head>
 
   <body>
 
-        <div  class="container" style="background-image:url('images/bg.jpg');background-repeat:no-repeat;background-size:cover;height:100%!important;width:100%;">
+        <div id="bg" class="container" style="background-image:url('images/bg.jpg');background-repeat:no-repeat;background-size:cover;height:100%!important;width:100%;">
             <a href="#"><img src="images/Snowman-icon.png" class="center-block img-responsive"/></a>
             <div class="row" style="display: none;">
               <div class="col-md-8">.col-md-8</div>

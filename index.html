@@ -28,12 +28,11 @@
 
   </body>
     <script type="text/javascript">
-      $("#bg").ready(function() {
+      $(document).ready(function() {
           console.log( "ready!" );
           var vph = $(window).height();
           console.log(vph);
-          $(‘#bg’).height(vph);
-
+          $("#bg").height(vph);
       });
     </script>
 </html>

@@ -20,7 +20,7 @@
 
         <div id="bg" class="container" style="background-image:url('images/bg.jpg');background-repeat:no-repeat;background-size:cover;width:100%;">
             <img src="images/Snowman-icon.png" class="center-block img-rounded img-responsive snowman"/>
-            <p class="text-center" style="margin-top:10px;"><b id="countdown">n</>天</p>
+            <p class="text-center" style="margin-top:20px;"><b id="countdown">n</></p>
         </div>
 
   </body>
@@ -33,7 +33,7 @@
           var d1 = new Date("December 24, 2015 18:30:00");
           var d2 = new Date();
           var n = d1.getDate()-d2.getDate()+30*(d1.getMonth()-d2.getMonth());
-          $("#countdown").html("还有"+n);
+          $("#countdown").html("还有"+n+"天");
           $(".snowman").on( "tap", function() {
             $(this).removeClass("snowman");
           });

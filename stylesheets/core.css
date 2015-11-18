@@ -9,6 +9,13 @@ body {
   -webkit-animation: shadowThrob 0.9s ease-out infinite;
   -webkit-animation-direction: alternate;
 }
+kbd{
+	box-shadow: 0px 0px 10px red;
+  animation: shadowThrob 0.9s infinite;
+  animation-direction: alternate;
+  -webkit-animation: shadowThrob 0.9s ease-out infinite;
+  -webkit-animation-direction: alternate;
+}
 @keyframes shadowThrob {
   from {box-shadow: 0px 0px 10px red;}
   to {box-shadow: 0px 0px 25px red;}

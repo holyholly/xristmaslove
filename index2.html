@@ -36,7 +36,7 @@
             </span>
         </div>
         <div id="xjtab" class="container" style="background-image:url('images/bg1.jpg');">
-          <div style="width:100%;height:100%;background:rgba(225,225,225,0.3);">
+          <div style="width:100%;height:100%;background:rgba(225,225,225,0.5);">
             <div class="row" style="margin-top:20px;margin-left:10px;">
               <div class="col-xs-2 col-md-1"><h1 style="margin-bottom:0px;">X</h1><h2 style="margin-top:0px;">新<br>疆</h2></div>
               <div class="col-xs-10 col-md-5">
@@ -89,7 +89,7 @@
           });
           $("kbd").on("tap",function(){
             var aID = $(this).attr('id');
-            $("#bg").fadeOut(400);
+            $("#bg").slideUp(400);
             $("#"+aID+"tab").fadeIn(800);
             //$("#"+aID+"tab").height(vph);
           });

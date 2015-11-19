@@ -65,17 +65,18 @@
                 不过渐渐也无所谓答案是什么了
               </div>
             </div>
+            <button id="home">Back</button>
           </div>
         </div>
         <div id="tjtab" class="container" style="background-image:url('images/bg.jpg');">
             <div style="width:100%;height:100%;background:rgba(225,225,225,0.5);">
             <div class="row" style="margin-top:20px;margin-left:10px;">
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-3 col-md-2">
                 <img src="images/2015-10-25 134145.jpg" class="center-block img-rounded" height="100" width="100">
                 <h2>T天津</h2>
               </div>
-              <div class="col-xs-6 col-md-3">
-                <blockquote style="font-size:15px;padding: 20px 10px;">
+              <div class="col-xs-9 col-md-4">
+                <blockquote style="font-size:15px;padding: 15px 10px;">
                   <p><i>“如果是100%的人的话，
                   不管多么晚才发现自己的心意，
                   兜兜转转绕了一个圈回来，
@@ -112,11 +113,16 @@
               $("#merry").fadeIn(1000);
             });
           });
+          var aID；
           $("kbd").on("tap",function(){
-            var aID = $(this).attr('id');
+            aID = $(this).attr('id');
             $("#bg").slideUp(800);
             $("#"+aID+"tab").fadeIn(800);
             //$("#"+aID+"tab").height(vph);
+          });
+          $("#home").on( "tap", function() {
+            $("#"+aID+"tab").slideDown(800);
+            $("#bg").fadeIn(800);
           });
       });
     </script>

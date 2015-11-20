@@ -24,3 +24,11 @@ kbd{
   from {box-shadow: 0px 0px 10px red;}
   to {box-shadow: 0px 0px 25px red;}
 }
+@keyframes shadowThrob2 {
+  from {box-shadow: 0px 0px 5px red;}
+  to {box-shadow: 0px 0px 15px red;}
+}
+@-webkit-keyframes shadowThrob2 {
+  from {box-shadow: 0px 0px 5px red;}
+  to {box-shadow: 0px 0px 15px red;}
+}

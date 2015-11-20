@@ -20,6 +20,11 @@
         filter: blur(5px);
         -webkit-filter: blur(5px);
       }
+      #sztab{
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+      }
+
     </style>
     <!-- Latest compiled and minified JavaScript -->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -112,7 +117,7 @@
               </div>
             </div>
           </div>
-          <button id="home">Back</button>
+          <button class="home">Back</button>
         </div>
         <div id="sztab" class="container" style="background-image:url('images/bg.jpg');">
             <div class="row" style="border:1px double brown;">
@@ -120,7 +125,7 @@
               <div class="col-xs-12 col-md-8">
               </div>
             </div>
-            <button id="home">Back</button>
+            <button class="home">Back</button>
         </div>
   </body>
     <script type="text/javascript">
@@ -139,11 +144,11 @@
           var aID;
           $("kbd").on("tap",function(){
             aID = $(this).attr('id');
-            $("#bg").slideUp(800);
+            $("#bg").fadeOut(800);
             $("#"+aID+"tab").fadeIn(800);
             //$("#"+aID+"tab").height(vph);
           });
-          $("#home").on( "tap", function() {
+          $(".home").on( "tap", function() {
             $(this).parent().fadeOut(800);
             $("#bg").fadeIn(800);
           });

@@ -143,6 +143,7 @@
           });
           var aID;
           $("kbd").on("tap",function(){
+            $(this).css("box-shadow","0px 0px 30px red");
             aID = $(this).attr('id');
             $("#bg").fadeOut(800);
             $("#"+aID+"tab").fadeIn(800);

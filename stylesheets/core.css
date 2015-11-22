@@ -51,7 +51,7 @@ kbd{
 	height: 600px;
 	border: 10px double black;
 	margin-left: 5%;
-	background: url(images/bg.jpg);
+	background: url(../images/bg.jpg);
 }
 kbd{
 	background-color: #BC1F2A;

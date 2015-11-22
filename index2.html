@@ -213,19 +213,20 @@
               marginLeft: "-450px",
               marginTop: "-90px",
             }, {
-              duration: 1000,
+              duration: 900,
               complete: function() { 
                 $("#endtab").fadeOut("fast");
                 $("#bg").fadeIn("slow",function(){
                   $(".theend").css({
                     width: "100px",
-                    opacity: 0.3,
+                    opacity: 1,
                     marginLeft: "90px",
                     marginTop: "200px",
                   });
                 });
               }
             });
+            $("#endtab").fadeOut(1000);
           });
       });
     </script>

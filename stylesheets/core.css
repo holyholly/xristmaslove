@@ -32,3 +32,10 @@ kbd{
   from {box-shadow: 0px 0px 5px red;}
   to {box-shadow: 0px 0px 15px red;}
 }
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Blenda Script.woff);
+}
+div {
+    font-family: myFirstFont;
+}

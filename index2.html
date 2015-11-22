@@ -171,7 +171,7 @@
               <hr style="border-top: 2px solid rgba(255,88,72,0.8);width:90%;">
               <h3 class="text-center" style="color:rgba(255,88,72,0.8);font-weight:bold;">每一口食物和每一寸时光</h3>
             </div>
-            <img src="images/lipstik.png" class="theend" style="position:absolute;margin-top:200px;width:100px;margin-left:100px;">
+            <img src="images/lipstik.png" class="theend" style="position:absolute;margin-top:200px;width:100px;margin-left:90px;">
         </div>
   </body>
     <script type="text/javascript">
@@ -208,13 +208,14 @@
           });
           $(".theend").on( "tap", function() {
             $(this).animate({
-              width: "800px",
-              opacity: 0.1,
-              marginLeft: "0px",
-              marginTop: "20px",
+              width: "700px",
+              opacity: 0.3,
+              marginLeft: "-220px",
+              marginTop: "10px",
             }, {
               duration: 1000,
               complete: function() { 
+                $("#endtab").fadeOut("fast");
                 $("#bg").fadeIn("slow");
               }
             });

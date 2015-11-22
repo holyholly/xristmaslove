@@ -39,3 +39,17 @@ kbd{
 #merry {
     font-family: merryFont;
 }
+@font-face {
+    font-family: tFont;
+    src: url(../fonts/Blenda.otf);
+}
+.tFont{
+	font-family: tFont;
+}
+.photoFrame{
+	width: 90%;
+	height: 600px;
+	border: 10px double black;
+	margin-left: 5%;
+	background: url(images/bg.jpg);
+}

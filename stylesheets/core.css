@@ -34,10 +34,6 @@ kbd{
 }
 @font-face {
     font-family: merryFont;
-    src: url(../fonts/Chomp.ttf);
-}
-@font-face {
-    font-family: merryFont2;
     src: url(../fonts/FARRAY.otf);
 }
 #merry {

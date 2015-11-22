@@ -166,13 +166,13 @@
             <div class="toend"><img src="images/heart.gif">To the end</div>
         </div>
         <div id="endtab" class="container" style="background-image:url('images/bg.jpg');">
-            <div class="row" style="margin-top:40px;position:absolute;margin-left:auto;margin-right:auto;width:264px;">
+            <div class="row" style="margin-top:40px;position:absolute;margin-left:12px;width:264px;">
               <h2 class="text-center" style="color:rgba(255,88,72,0.8);font-weight:bold;">永远记得和你一起</h2>
               <hr style="border-top: 2px solid rgba(255,88,72,0.8);width:90%;">
               <h3 class="text-center" style="color:rgba(255,88,72,0.8);font-weight:bold;">每一口食物和每一寸时光</h3>
             </div>
-            <div class="theend" style="position:absolute;margin-top:140px;width:50px;margin-left:auto;margin-right:auto;overflow:visible">
-              <img src="images/lipstik.png">
+            <div class="theend" style="position:absolute;margin-top:200px;width:50px;margin-left:80px;overflow:visible">
+              <img src="images/lipstik.png" width="100px">
             </div>
         </div>
   </body>
@@ -211,9 +211,13 @@
           $(".theend").on( "tap", function() {
             $(this).children().animate({
               width: "700px",
-              height: "700px",
-              opacity: 0.4,
-            }, 1500 );
+              opacity: 0.1,
+            }, {
+              duration: 1000,
+              complete: function() { 
+                $("#bg").fadeIn("slow");
+              }
+            });
           });
       });
     </script>

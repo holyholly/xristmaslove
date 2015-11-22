@@ -53,3 +53,20 @@ kbd{
 	margin-left: 5%;
 	background: url(images/bg.jpg);
 }
+kbd{
+	background-color: #BC1F2A;
+}
+	#xjtab,#tjtab,#sztab,#endtab{
+	display:none;
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+}
+#tjtab{
+	color: white;
+	text-shadow: 0 1px 0 #333;
+}
+#endtabblur{
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+}

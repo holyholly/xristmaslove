@@ -36,6 +36,10 @@ kbd{
     font-family: merryFont;
     src: url(../fonts/FARRAY.otf);
 }
+@font-face {
+    font-family: merryFont2;
+    src: url(../fonts/FARRAY.otf);
+}
 #merry {
     font-family: merryFont;
 }

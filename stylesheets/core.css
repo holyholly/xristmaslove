@@ -61,7 +61,7 @@ kbd{
 	background-size:cover;
 	width:100%;
 }
-#tjtab{
+#tjtab h2, #tjtab i{
 	color: white;
 	text-shadow: 0 1px 0 #333;
 }
@@ -77,4 +77,8 @@ kbd{
 #home img, #toend img{
 	height: 30px;
     padding-right: 5px;
+}
+table{
+	margin-left:17px;
+	margin-right:17px;
 }

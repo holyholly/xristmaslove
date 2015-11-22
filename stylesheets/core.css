@@ -37,5 +37,5 @@ kbd{
     src: url(../fonts/FARRAY.otf);
 }
 #merry {
-    font-family: merryFont;
+    font-family: merryFont!important;
 }

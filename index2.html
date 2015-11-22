@@ -135,7 +135,7 @@
           console.log(vph);
           $("#bg").height(vph);
           $(".snowman").on( "tap", function() {
-            $(this).removeClass("snowman").css("box-shadow","0px 0px 40px red").fadeOut("slow", function() {
+            $(this).removeClass("snowman").css("box-shadow","0px 0px 40px red").css("margin-top","25px").fadeOut("slow", function() {
               // Animation complete.
               $("#bg").css("background-image","url('images/christmas-cards_1x.jpg')");
               $("#merry").fadeIn(1000);
@@ -145,13 +145,15 @@
           $("kbd").on("tap",function(){
             $(this).css("box-shadow","0px 0px 30px red");
             aID = $(this).attr('id');
-            $("#bg").fadeOut(800);
-            $("#"+aID+"tab").fadeIn(800);
+            $("#bg").fadeOut("slow", function() {
+              $("#"+aID+"tab").fadeIn(500);
+            });
             //$("#"+aID+"tab").height(vph);
           });
           $(".home").on( "tap", function() {
-            $(this).parent().fadeOut(800);
-            $("#bg").fadeIn(800);
+            $(this).parent().fadeOut("slow", function() {
+              $("#bg").fadeIn(500);
+            });
           });
       });
     </script>

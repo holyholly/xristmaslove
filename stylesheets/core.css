@@ -34,7 +34,7 @@ kbd{
 }
 @font-face {
     font-family: merryFont;
-    src: url(../fonts/Blenda Script.otf);
+    src: url(../fonts/Blenda.otf);
 }
 #merry {
     font-family: merryFont;

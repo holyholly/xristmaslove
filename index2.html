@@ -208,15 +208,22 @@
           });
           $(".theend").on( "tap", function() {
             $(this).animate({
-              width: "700px",
+              width: "1200px",
               opacity: 0.3,
-              marginLeft: "-220px",
-              marginTop: "10px",
+              marginLeft: "-450px",
+              marginTop: "-90px",
             }, {
               duration: 1000,
               complete: function() { 
                 $("#endtab").fadeOut("fast");
-                $("#bg").fadeIn("slow");
+                $("#bg").fadeIn("slow",function(){
+                  $(".theend").css({
+                    width: "100px",
+                    opacity: 0.3,
+                    marginLeft: "90px",
+                    marginTop: "200px",
+                  });
+                });
               }
             });
           });

@@ -151,17 +151,17 @@
                   </a>
                 </div>
                 <div class="words text-center">
-                  这个潮湿炎热乱哄哄的城市 <br/>充满着我们不喜欢的元素
+                  这个潮湿炎热乱哄哄的城市 <br/>充满着我们不喜欢的元素<br/>
                   但是想想 可以穿着短袖衣服和你拥抱<br/>
                   可以在阳光下吃冰棍 可以在海边散步<br/>
                   便开始喜欢这里<br/>
                   所以呢<br/>
                   希望这座城市可以<br/>
-                  燃烧更多的脂肪 & 收藏更多的回忆
+                  燃烧你更多的脂肪&收藏我们更多的回忆
                 </div>
               </div>
             </div>
-            <button class="home">To the end</button>
+            <button class="toend">To the end</button>
         </div>
         <div id="endtab" class="container" style="background-image:url('images/bg.jpg');">
             <div class="row">
@@ -195,6 +195,11 @@
           $(".home").on( "tap", function() {
             $(this).parent().fadeOut("slow", function() {
               $("#bg").fadeIn("slow");
+            });
+          });
+          $(".toend").on( "tap", function() {
+            $(this).parent().fadeOut("slow", function() {
+              $("#endtab").fadeIn("slow");
             });
           });
       });

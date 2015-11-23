@@ -3,7 +3,7 @@ body {
 }
 .snowman{
 	box-shadow: 0px 0px 10px red;
-	margin-top:25px;
+	margin-top:50px;
   animation: shadowThrob 0.9s infinite;
   animation-direction: alternate;
   -webkit-animation: shadowThrob 0.9s ease-out infinite;
@@ -18,11 +18,11 @@ kbd{
 }
 @keyframes shadowThrob {
   from {box-shadow: 0px 0px 10px red;}
-  to {box-shadow: 0px 0px 25px red;}
+  to {box-shadow: 0px 0px 35px red;}
 }
 @-webkit-keyframes shadowThrob {
   from {box-shadow: 0px 0px 10px red;}
-  to {box-shadow: 0px 0px 25px red;}
+  to {box-shadow: 0px 0px 35px red;}
 }
 @keyframes shadowThrob2 {
   from {box-shadow: 0px 0px 5px red;}

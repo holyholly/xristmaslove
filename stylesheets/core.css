@@ -85,3 +85,6 @@ table{
 .toend{
 	text-align: right;
 }
+audio{
+  display: none;
+}
